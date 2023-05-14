@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    
+    
+}
+body {
+    overflow: hidden;
+}
+.sky {
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.score {
+    background-color: burlywood;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.score span {
+    margin: 5px;
+}
+.container {
+    
+    cursor: none;
+    height: 100vh;
+    background-color: grey;
+}
+.playable {  
+    display: flex;
+    justify-content: space-between; 
+    border-bottom: 2px solid black;
+}
+.fa-crosshairs {
+    font-size: 30px;
+    position: absolute;
+    z-index: 10;
+}
+.spawnpoint {
+    position: relative;
+    height: 200px;
+    width: 200px;
+  
+}
+.mid {
+    position: relative;
+    width: 700px;
+    height: 200px;
+}
+.middle {
+    left: 200px;
+}
+
+.enemy {
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.crate , .barrel , .iron {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+}
+.iron {
+    width: 600px;
+    height: 100px;
+    background-color: rgb(166, 118, 54);
+    border: 1.5px solid black;
+}
+.barrel {
+    bottom: -20px;
+}
+
+.right {
+    transform: rotate(-20deg);
+    left: -30px;
+}
+.crate {
+    width: 150px;
+}
+.barrel {
+    height: 200px;
+}
